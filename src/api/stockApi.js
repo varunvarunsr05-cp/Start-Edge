@@ -13,7 +13,8 @@ export class StockApiError extends Error {
 }
 
 function buildProxiedUrl(targetUrl) {
-  return `${CORS_PROXY}${encodeURIComponent(targetUrl)}`;
+  // return `${CORS_PROXY}${encodeURIComponent(targetUrl)}`;
+  const CORS_PROXY = "https://api.codetabs.com/v1/proxy/?quest=";
 }
 
 /**
